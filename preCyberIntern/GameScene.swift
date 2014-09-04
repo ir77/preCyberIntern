@@ -27,8 +27,8 @@ class GameScene: SKScene {
             
             let sprite = SKSpriteNode(imageNamed:"char_fatboy.png")
             
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
+            sprite.xScale = 1.5
+            sprite.yScale = 1.5
             sprite.position = location
             
             let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
