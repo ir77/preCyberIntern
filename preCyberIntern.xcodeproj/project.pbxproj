@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		295F3C9E19B88BB000CB7C99 /* char_fatboy.png in Resources */ = {isa = PBXBuildFile; fileRef = 295F3C9D19B88BB000CB7C99 /* char_fatboy.png */; };
+		2973A57E19B8999500C7921F /* PixelMplus12-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2973A57C19B8999500C7921F /* PixelMplus12-Bold.ttf */; };
+		2973A57F19B8999500C7921F /* PixelMplus12-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2973A57D19B8999500C7921F /* PixelMplus12-Regular.ttf */; };
 		B10229B719B886FD00236407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10229B619B886FD00236407 /* AppDelegate.swift */; };
 		B10229B919B886FD00236407 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B10229B819B886FD00236407 /* GameScene.sks */; };
 		B10229BB19B886FD00236407 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10229BA19B886FD00236407 /* GameScene.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		295F3C9D19B88BB000CB7C99 /* char_fatboy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = char_fatboy.png; sourceTree = "<group>"; };
+		2973A57C19B8999500C7921F /* PixelMplus12-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelMplus12-Bold.ttf"; sourceTree = "<group>"; };
+		2973A57D19B8999500C7921F /* PixelMplus12-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelMplus12-Regular.ttf"; sourceTree = "<group>"; };
 		B10229B119B886FD00236407 /* preCyberIntern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = preCyberIntern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10229B519B886FD00236407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10229B619B886FD00236407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		B10229B319B886FD00236407 /* preCyberIntern */ = {
 			isa = PBXGroup;
 			children = (
+				2973A57C19B8999500C7921F /* PixelMplus12-Bold.ttf */,
+				2973A57D19B8999500C7921F /* PixelMplus12-Regular.ttf */,
 				295F3C9D19B88BB000CB7C99 /* char_fatboy.png */,
 				B10229B619B886FD00236407 /* AppDelegate.swift */,
 				B10229B819B886FD00236407 /* GameScene.sks */,
@@ -199,7 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				295F3C9E19B88BB000CB7C99 /* char_fatboy.png in Resources */,
+				2973A57E19B8999500C7921F /* PixelMplus12-Bold.ttf in Resources */,
 				B10229C219B886FD00236407 /* Images.xcassets in Resources */,
+				2973A57F19B8999500C7921F /* PixelMplus12-Regular.ttf in Resources */,
 				B10229B919B886FD00236407 /* GameScene.sks in Resources */,
 				B10229C019B886FD00236407 /* Main.storyboard in Resources */,
 			);
