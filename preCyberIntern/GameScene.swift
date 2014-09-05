@@ -29,7 +29,7 @@ class GameScene: SKScene {
     
         self.view?.addSubview(myTextField)
         myTextField.backgroundColor = UIColor.redColor()
-        myTextField.text = "some string"
+        myTextField.text = "YOUR NAME"
         myTextField.borderStyle = UITextBorderStyle.Line
     }
     
