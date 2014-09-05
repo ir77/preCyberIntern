@@ -17,6 +17,7 @@
 		B10229C019B886FD00236407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10229BE19B886FD00236407 /* Main.storyboard */; };
 		B10229C219B886FD00236407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10229C119B886FD00236407 /* Images.xcassets */; };
 		B10229CE19B886FD00236407 /* preCyberInternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10229CD19B886FD00236407 /* preCyberInternTests.swift */; };
+		B1FA32AB19B980B200A50D05 /* roomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA32AA19B980B200A50D05 /* roomScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B10229C719B886FD00236407 /* preCyberInternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = preCyberInternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10229CC19B886FD00236407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10229CD19B886FD00236407 /* preCyberInternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preCyberInternTests.swift; sourceTree = "<group>"; };
+		B1FA32AA19B980B200A50D05 /* roomScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roomScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B10229B619B886FD00236407 /* AppDelegate.swift */,
 				B10229B819B886FD00236407 /* GameScene.sks */,
 				B10229BA19B886FD00236407 /* GameScene.swift */,
+				B1FA32AA19B980B200A50D05 /* roomScene.swift */,
 				B10229BC19B886FD00236407 /* GameViewController.swift */,
 				B10229BE19B886FD00236407 /* Main.storyboard */,
 				B10229C119B886FD00236407 /* Images.xcassets */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10229BB19B886FD00236407 /* GameScene.swift in Sources */,
+				B1FA32AB19B980B200A50D05 /* roomScene.swift in Sources */,
 				B10229BD19B886FD00236407 /* GameViewController.swift in Sources */,
 				B10229B719B886FD00236407 /* AppDelegate.swift in Sources */,
 			);
