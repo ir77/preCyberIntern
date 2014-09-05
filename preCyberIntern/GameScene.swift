@@ -9,6 +9,8 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    var _playButton:SKSpriteNode = SKSpriteNode(imageNamed: "play.png")
+
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         let myLabel = SKLabelNode(fontNamed:"PixelMplus12-Regular")
@@ -18,6 +20,10 @@ class GameScene: SKScene {
         
         self.addChild(myLabel)
         self.backgroundColor = UIColor.blueColor()
+        
+        _playButton.position = CGPoint(x: 500, y: 250)
+        _playButton.setScale(1.0)
+        self.addChild(_playButton)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
