@@ -30,19 +30,26 @@ class GameScene: SKScene {
         /* Called when a touch begins */
         
         for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"char_fatboy.png")
-            
-            sprite.xScale = 1.5
-            sprite.yScale = 1.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            // tapping tha play button plays the game update loop
+            if CGRectContainsPoint(_playButton.frame, touch.locationInNode(self)) {
+                //playButtonPressed()
+                NSLog("pushed!")
+            } else {
+
+                let location = touch.locationInNode(self)
+                
+                let sprite = SKSpriteNode(imageNamed:"char_fatboy.png")
+                
+                sprite.xScale = 1.5
+                sprite.yScale = 1.5
+                sprite.position = location
+                
+                let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+                
+                sprite.runAction(SKAction.repeatActionForever(action))
+                
+                self.addChild(sprite)
+            }
         }
     }
    
