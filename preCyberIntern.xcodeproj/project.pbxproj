@@ -18,6 +18,7 @@
 		B10229C219B886FD00236407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10229C119B886FD00236407 /* Images.xcassets */; };
 		B10229CE19B886FD00236407 /* preCyberInternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10229CD19B886FD00236407 /* preCyberInternTests.swift */; };
 		B1FA32AB19B980B200A50D05 /* roomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA32AA19B980B200A50D05 /* roomScene.swift */; };
+		B1FA32AD19B98F4000A50D05 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FA32AC19B98F4000A50D05 /* play.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B10229CC19B886FD00236407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10229CD19B886FD00236407 /* preCyberInternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preCyberInternTests.swift; sourceTree = "<group>"; };
 		B1FA32AA19B980B200A50D05 /* roomScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roomScene.swift; sourceTree = "<group>"; };
+		B1FA32AC19B98F4000A50D05 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				2973A57C19B8999500C7921F /* PixelMplus12-Bold.ttf */,
 				2973A57D19B8999500C7921F /* PixelMplus12-Regular.ttf */,
+				B1FA32AC19B98F4000A50D05 /* play.png */,
 				295F3C9D19B88BB000CB7C99 /* char_fatboy.png */,
 				B10229B619B886FD00236407 /* AppDelegate.swift */,
 				B10229B819B886FD00236407 /* GameScene.sks */,
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FA32AD19B98F4000A50D05 /* play.png in Resources */,
 				295F3C9E19B88BB000CB7C99 /* char_fatboy.png in Resources */,
 				2973A57E19B8999500C7921F /* PixelMplus12-Bold.ttf in Resources */,
 				B10229C219B886FD00236407 /* Images.xcassets in Resources */,
