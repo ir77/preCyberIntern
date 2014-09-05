@@ -7,10 +7,12 @@
 //
 
 import SpriteKit
+import UIKit
 
 class GameScene: SKScene {
-    var _playButton:SKSpriteNode = SKSpriteNode(imageNamed: "play.png")
-
+    var _playButton:SKSpriteNode = SKSpriteNode(imageNamed: "play.png");
+    var myTextField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: 200.00, height: 40.00));
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         let myLabel = SKLabelNode(fontNamed:"PixelMplus12-Regular")
@@ -24,6 +26,11 @@ class GameScene: SKScene {
         _playButton.position = CGPoint(x: 500, y: 250)
         _playButton.setScale(1.0)
         self.addChild(_playButton)
+    
+        self.view?.addSubview(myTextField)
+        myTextField.backgroundColor = UIColor.redColor()
+        myTextField.text = "YOUR NAME"
+        myTextField.borderStyle = UITextBorderStyle.Line
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
