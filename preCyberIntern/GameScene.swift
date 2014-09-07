@@ -9,16 +9,16 @@
 import SpriteKit
 import UIKit
 
-class GameScene: SKScene {
-    var _playButton:SKSpriteNode = SKSpriteNode(imageNamed: "play.png");
-    var myTextField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: 200.00, height: 40.00));
+class GameScene: SKScene, UITextFieldDelegate, UIAlertViewDelegate {
+    var _playButton:SKSpriteNode = SKSpriteNode(imageNamed: "play.png")
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        
         let myLabel = SKLabelNode(fontNamed:"PixelMplus12-Regular")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        myLabel.text = "Hello, World!"
+        myLabel.fontSize = 65
+        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         
         self.addChild(myLabel)
         self.backgroundColor = UIColor.blueColor()
@@ -27,10 +27,34 @@ class GameScene: SKScene {
         _playButton.setScale(1.0)
         self.addChild(_playButton)
     
-        self.view?.addSubview(myTextField)
-        myTextField.backgroundColor = UIColor.redColor()
-        myTextField.text = "YOUR NAME"
-        myTextField.borderStyle = UITextBorderStyle.Line
+        //ポップアップを作成
+        let alert = UIAlertView()
+        alert.title = "あなたの名前は？"
+        alert.alertViewStyle = UIAlertViewStyle.PlainTextInput
+        alert.message = ""
+        alert.addButtonWithTitle("けってい")
+        alert.show()
+        alert.delegate = self
+        
+        //ポップアップに入力フォームを追加
+        let textField = alert.textFieldAtIndex(0)
+        textField?.placeholder = "名前を入力"
+        textField?.delegate = self
+
+    }
+    
+    //キーボードのReturnキーで入力確定
+    func textFieldShouldReturn(textField: UITextField!) -> Bool{
+        println(textField?.text )
+        return true
+    }
+    
+    //AlertViewのけっていキーで入力確定
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int){
+        if buttonIndex == 0{
+            let textField = alertView.textFieldAtIndex(0)
+            println(textField?.text)
+        }
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -59,6 +83,7 @@ class GameScene: SKScene {
             }
         }
     }
+    
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
